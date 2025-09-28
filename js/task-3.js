@@ -1,12 +1,14 @@
+'use strict'
+
 function filterArray(numbers, value) {
-    const filteredNumbers = []
-    for (let i = 0; i < numbers.length; i+= 1) {
-        const number = numbers[i]
-        if (number > value) {
-            filteredNumbers.push(number)
-        }
+  const filteredNumbers = [];
+  for (let i = 0; i < numbers.length; i += 1) {
+    const number = numbers[i];
+    if (number > value) {
+      filteredNumbers.push(number);
     }
-    return filteredNumbers
+  }
+  return filteredNumbers;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
